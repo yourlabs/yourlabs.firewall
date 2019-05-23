@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   author: James Pic
+  role_name: firewall
   description: Hardcoded firewall for basic docker servers
   company: YourLabs
   issue_tracker_url: https://yourlabs.io/oss/yourlabs.docker/issues
