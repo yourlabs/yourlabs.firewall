@@ -2,9 +2,9 @@
 galaxy_info:
   author: James Pic
   role_name: firewall
-  description: Hardcoded firewall for basic docker servers
+  description: Basic iptables configuration
   company: YourLabs
-  issue_tracker_url: https://yourlabs.io/oss/yourlabs.docker/issues
+  issue_tracker_url: https://yourlabs.io/oss/yourlabs.firewall/issues
   license: MIT
   min_ansible_version: 1.2
   platforms:
