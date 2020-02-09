@@ -1,5 +1,13 @@
 ---
 
+- name: Set facts for CentOS
+  when: ansible_os_family == 'RedHat'
+  set_fact:
+    firewall_rules_path: /etc/sysconfig/iptables
+    firewall_packages: iptables
+    firewall_service: iptables
+    service_manager: systemctl
+
 - name: Set facts for Arch
   when: ansible_os_family == 'Archlinux'
   set_fact:
