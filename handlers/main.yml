@@ -1,8 +1,7 @@
 ---
 
 - name: Apply firewall
-  notify: Restart docker
-  shell: systemctl daemon-reload
+  shell: sh -c "type systemctl && systemctl daemon-reload || echo systemctl skip"
 
 - name: Restart iptables
   notify: '{{ notify|default(false) }}'
