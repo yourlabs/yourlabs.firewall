@@ -41,6 +41,7 @@
   notify: Apply firewall
   when: rules|default('')
   copy:
+    backup: yes
     dest: '{{ firewall_rules_path }}'
     owner: root
     group: root
