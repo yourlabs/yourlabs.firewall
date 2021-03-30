@@ -1,7 +1,8 @@
 ---
 
 - name: Apply firewall
-  shell: sh -c "type systemctl && systemctl daemon-reload || echo systemctl skip"
+  ansible.builtin.systemd:
+    daemon_reload: yes
 
 - name: Restart iptables
   notify: '{{ notify|default(false) }}'

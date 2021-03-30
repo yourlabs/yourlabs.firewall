@@ -11,5 +11,5 @@ test:
   - grep 'unreachable=0.*failed=0' out
 
   services:
-  - name: docker.io/yourlabs/sshd:ubuntu1804
+  - name: docker.io/yourlabs/sshd:ubuntu2004
     alias: target
